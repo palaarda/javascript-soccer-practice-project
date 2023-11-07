@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=PT+Sans&family=Poppins&family=Roboto:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(assets/img/bg.jpg);
+  background-size: cover;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "PT Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.dark-effect {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.showEditMode {
+  display: flex;
+}
+
+.edit-mode {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 15%;
+  height: 120px;
+  border-radius: 25px;
+  display: none;
+}
+.edit-mode h4 {
+  position: absolute;
+  top: -40px;
+  left: 1%;
+}
+.edit-mode .edit-mode-btn {
+  border: none;
+  background: none;
+  color: white;
+  margin-left: 5px;
+  padding: 5px;
+  margin-top: -5px;
+  transition: 0.2s ease-out;
+  border: #e0b12d;
+}
+.edit-mode .edit-mode-btn:hover {
+  border-bottom: 2px solid #e0b12d;
+  margin-top: -13px;
+}
+.edit-mode .exit-edit-mode-btn {
+  font-size: 20px;
+  position: absolute;
+  top: -40px;
+  right: 0;
+  margin: 0 10px;
+  border: none;
+  background: none;
+  color: white;
+  transition: 0.2s ease-out;
+}
+.edit-mode .exit-edit-mode-btn:hover {
+  color: #e0b12d;
+}
+
+.main-container .nav {
+  position: absolute;
+  top: -40px;
+  left: 0;
+}
+.main-container .nav button {
+  border: none;
+  background: none;
+  color: white;
+  margin-left: 5px;
+  padding: 5px;
+  margin-top: -5px;
+  transition: 0.2s ease-out;
+  border: #e0b12d;
+}
+.main-container .nav button:hover {
+  border-bottom: 2px solid #e0b12d;
+  margin-top: -13px;
+}
+.main-container .main-inside {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 700px;
+  max-width: 700px;
+  border: none;
+  border-radius: 25px;
+}
+.main-container .main-inside .scores {
+  position: absolute;
+  max-width: 700px;
+  width: 700px;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 25px;
+}
+@media (max-width: 767px) {
+  .main-container .main-inside .scores {
+    width: 520px;
+  }
+}
+@media (max-width: 767px) and (max-width: 526px) {
+  .main-container .main-inside .scores {
+    width: 480px;
+  }
+}
+.main-container .main-inside .scores .edit-mode-add-remove {
+  position: absolute;
+  justify-content: space-between;
+  max-width: 482px;
+  width: 482px;
+  bottom: 1%;
+  display: none;
+}
+.main-container .main-inside .scores .edit-mode-add-remove button {
+  border: none;
+  background: none;
+}
+.main-container .main-inside .scores .edit-mode-add-remove button i {
+  font-size: 24px;
+  color: white;
+  transition: 0.2s ease-out;
+}
+.main-container .main-inside .scores .edit-mode-add-remove button i:hover {
+  color: #e0b12d;
+}/*# sourceMappingURL=main.css.map */
